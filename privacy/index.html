@@ -28,7 +28,7 @@
       <ul>
         <li>Your photos, PDFs, screenshots, texts and reminders stay on your phone. Text is recognised on the device. We never see them.</li>
         <li>There is no account. We do not know your name, email or phone number.</li>
-        <li>The app sends us anonymous usage statistics (which features were used, never what was in your documents). You can turn them off in Settings. We delete them after 180 days.</li>
+        <li>Only if you allow it, the app sends us anonymous usage statistics (which features were used, never what was in your documents). The app asks once; you can change your answer in Settings. We delete them after 180 days.</li>
         <li>If you send feedback, we receive the message you wrote.</li>
         <li>No ads, no tracking, no selling of data.</li>
       </ul>
@@ -45,7 +45,7 @@
       <li>reminders: titles, dates, amounts, references, notes, checklists, and your settings.</li>
     </ul>
     <p>We have no access to this data, and none of it is sent to us or to anyone else. PaperPing does not download the web pages behind links you share; it uses only the text that came with the link.</p>
-    <p>You can delete it at any time: delete a reminder, use <b>Settings → Delete all data</b>, or uninstall the app. Uninstalling removes the data from the phone. We keep no copy on our servers. If your phone’s system backup (iCloud Backup or Google backup) is turned on, your phone may include PaperPing’s data in that encrypted backup, which Apple or Google store under your own account; we have no access to it. Deleting data in the app does not change backups made earlier — they are managed in your phone’s settings.</p>
+    <p>You can delete it at any time: delete a reminder, use <b>Settings → Delete all data</b>, or uninstall the app. Uninstalling removes the data from the phone. We keep no copy on our servers. <b>Backups.</b> On iPhone, if iCloud Backup (or an encrypted backup to a computer) is turned on, iOS may include PaperPing’s data in that encrypted backup, which Apple stores under your own account (or which stays on your computer); we have no access to it, and deleting data in the app does not change backups made earlier — they are managed in your phone’s settings. On Android, PaperPing’s reminders and documents are not included in the Google backup or in a transfer to a new phone.</p>
 
     <h2>3. What the app sends to us</h2>
     <h3>Anonymous usage statistics</h3>
@@ -54,14 +54,15 @@
       <li>the event name (for example “reminder confirmed”, “source imported”, “item completed”);</li>
       <li>numbers, yes/no values and fixed categories (for example the kind of source — photo, PDF, text or link; how many seconds confirming took; whether the suggested date was kept; the detected language of the text as English, Polish, Russian or unknown);</li>
       <li>a random identifier of a reminder, so that “saved” and “completed” can be counted for the same reminder;</li>
-      <li>a random identifier of the installation (“anonymous ID”), a session identifier, time, app version, platform (iOS or Android) and interface language.</li>
+      <li>a random identifier of the installation (“anonymous ID”, stored on your phone only after you allow statistics), a session identifier, time, app version, platform (iOS or Android) and interface language.</li>
     </ul>
     <p>Events <b>never</b> contain your texts, recognised text, images, titles, notes, amounts, currencies, dates from your documents, reference or account numbers, links, or file names. Our server accepts only a fixed list of events and values and discards anything else.</p>
-    <p>Statistics are on by default and you can turn them off at any time in <b>Settings → Privacy and security → Anonymous usage statistics</b>. When they are off, nothing is recorded or sent, and events waiting to be sent are deleted.</p>
-    <p>Legal basis: our legitimate interest in understanding and improving the app (Art. 6(1)(f) GDPR). You can object at any time by turning the statistics off. Retention: <b>180 days</b>, then deleted automatically.</p>
+    <p><b>Statistics are off until you allow them.</b> When you first use the app it asks “Help improve PaperPing?” with two equal choices, <b>Allow</b> and <b>Not now</b> (people who installed an earlier version see the same question once on the home screen). Until you tap Allow, nothing is recorded or sent and no anonymous ID is created. After you allow it, the app first sends one event saying so (“analytics consent”). If you choose Not now, nothing is sent at all — not even your refusal.</p>
+    <p>You can change your answer at any time in <b>Settings → Privacy and security → Anonymous usage statistics</b>. When you turn them off, nothing more is recorded or sent, events waiting to be sent are deleted, and the anonymous ID is deleted from your phone. If you allow them again later, a new random ID is created.</p>
+    <p>Legal basis: your consent (Art. 6(1)(a) GDPR). Storing the anonymous ID on your phone and reading it also relies on your consent, as the ePrivacy rules (Art. 5(3) of Directive 2002/58/EC and the national laws implementing it) require. You can withdraw consent at any time in Settings; this does not affect the lawfulness of processing before the withdrawal. Retention: <b>180 days</b>, then deleted automatically.</p>
 
     <h3>Feedback</h3>
-    <p>If you use <b>Settings → Send feedback</b>, we receive the message you wrote together with the app version, platform, interface language and the anonymous ID. Please do not paste letters, account numbers or other personal details into it. If you write to us by email, we receive your email address and message.</p>
+    <p>If you use <b>Settings → Send feedback</b>, we receive the message you wrote together with the app version, platform, interface language and the anonymous ID only if you turn on “Attach my anonymous ID” on that screen (off by default; it is shown only while statistics are allowed). Otherwise the message is sent with a one-off random number that is not stored on your phone and is used only to limit how many messages can be sent. Please do not paste letters, account numbers or other personal details into it. If you write to us by email, we receive your email address and message.</p>
     <p>Legal basis: our legitimate interest in answering and improving the app (Art. 6(1)(f) GDPR). Retention: as long as needed to handle the message, and no longer than 24 months — older messages are deleted automatically.</p>
 
     <h3>IP addresses</h3>
@@ -97,7 +98,7 @@
 
     <h2>7. Your rights</h2>
     <p>Under the GDPR you have the right to access your data, to have it corrected or deleted, to restrict its processing, to object to it, and to data portability. Write to <a href="mailto:penkin.yauhen@gmail.com">penkin.yauhen@gmail.com</a>; we reply within one month.</p>
-    <p>Because the statistics are anonymous to us, we can find your events only if you give us your anonymous ID, shown in <b>Settings → About → Anonymous ID</b> (tap “Copy”; it is also added to feedback emails). Without it we cannot tell which events are yours — they are then deleted automatically after 180 days. On iPhone the anonymous ID can survive reinstalling the app; <b>Settings → About → Reset anonymous ID</b> replaces it with a new random one and drops statistics not sent yet. See also <a href="../delete-data/">How to delete your data</a>.</p>
+    <p>Because the statistics are anonymous to us, we can find your events only if you give us your anonymous ID, shown in <b>Settings → About → Anonymous ID</b> (tap “Copy”, or attach it to your feedback). The ID exists only while statistics are allowed: if you have turned them off or never allowed them, there is no ID on your phone and no statistics of yours on our server, except events sent before you turned them off. To ask us to delete those sooner, copy the ID before turning statistics off. Without it we cannot tell which events are yours — they are then deleted automatically after 180 days. On iPhone the anonymous ID can survive reinstalling the app; <b>Settings → About → Reset anonymous ID</b> replaces it with a new random one and drops statistics not sent yet; <b>Settings → Delete all data</b> does the same. See also <a href="../delete-data/">How to delete your data</a>.</p>
     <p>You can also lodge a complaint with the Polish data protection authority: Prezes Urzędu Ochrony Danych Osobowych, ul. Stawki 2, 00-193 Warszawa, <a href="https://uodo.gov.pl/">uodo.gov.pl</a>, or with the authority in your EU country.</p>
 
     <h2>8. Children</h2>
